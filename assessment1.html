@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("background.png");
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        margin: 0;
+      }
+
+      .topnav {
+        position: relative;
+        overflow: hidden;
+        background-color: #000000;
+        padding: 10px 10px;
+        border-bottom: solid #4f4949;
+      }
+
+      .topnav a {
+        float: left;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav-centered a {
+        float: none;
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .topnav-right {
+        float: right;
+      }
+
+      .exterior-image {
+        border-style: solid;
+        margin-top: 8%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 2%;
+      }
+
+      .menu {
+        float: right;
+        width: 30%;
+        font-weight: bold;
+      }
+      .menu a {
+        background-color: #e5e5e5;
+        padding: 5%;
+        display: block;
+        width: 100%;
+        color: black;
+        text-decoration: none;
+      }
+
+      .menu a > span {
+        float: right;
+      }
+
+      .main {
+        float: left;
+        width: 60%;
+      }
+
+      .main p {
+        color: #c6d2d5;
+      }
+
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .menu,
+        .main {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <div class="topnav-centered">
+        <a>Hotel Details</a>
+      </div>
+      <a class="topnav-left" href="#">< Back</a>
+      <div class="topnav-right">
+        <img src="logo.jpg" style="height: 44px;" />
+      </div>
+    </div>
+
+    <div class="exterior-image">
+      <img src="hotelexterior.jpg" style="width:100%;" />
+    </div>
+
+    <div style="margin:4%">
+      <div class="main">
+        <h2>Hilton Chicago</h2>
+        <p>720 South Michigan Avenue</p>
+        <p>Chicago, Illinois, 60605</p>
+        <p><u>1-312-922-4400</u></p>
+      </div>
+
+      <div class="menu">
+        <a href="#">Map<span>></span></a>
+        <a href="#">Photo gallery<span>></span></a>
+        <a href="#">Amenities<span>></span></a>
+        <a href="#">Bottom<span>></span></a>
+      </div>
+    </div>
+  </body>
+</html>
